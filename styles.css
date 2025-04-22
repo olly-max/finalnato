@@ -7,13 +7,16 @@ body {
   background-color: #f8f9fa;
   overflow-x: hidden; /* Prevent horizontal scrolling on smaller devices */
 }
-
+* {
+  box-sizing: border-box;
+}
 /* Hero Section */
 .hero {
   font-family: "Audiowide", sans-serif;
   background: linear-gradient(45deg, #ffe135, #f89a21); /* Sunflower tones */
   color: white;
   text-align: center;
+  border-radius: 20% 0;
   padding: 20px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -115,10 +118,15 @@ body {
 }
 
 /* Projects and About Sections */
+section {
+  max-width: 100%;
+  overflow: hidden; /* Prevent content overflow */
+}
+
 section,h2 {
   padding: 20px;
   margin: 10px;
-   border-radius: 50% 0;
+   border-radius: 40% 0;
   border: 2px solid #f89a21;
   background: linear-gradient(45deg, #ffe135, #ffffff);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -144,7 +152,7 @@ h2 {
   float: left;
   font-size: 24px;
   font-weight: bold;
-  line-height: 0.8; /* Adjusts vertical spacing of letters */
+  line-height: 0.7; /* Adjusts vertical spacing of letters */
 }
 
 .resume-content {
@@ -170,14 +178,11 @@ h2 {
   display: flex;
   justify-content: space-between; /* Separates title & content */
   align-items: center;
-  padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 /* Container Styling */
-.about-box {
-  width: 100%; /* Uses full width */
-
-}
 
 /* Title Styling - Floats to Right */
 .about-title {
@@ -188,6 +193,8 @@ h2 {
 
 /* Content Styling - Aligns Left */
 .about-content {
+  margin-top: 30px;
+  text-align:right;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -195,7 +202,6 @@ h2 {
 .projects-container {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
 }
 
 .project {
@@ -228,7 +234,7 @@ body {
 }
 
 .contact-section {
-  max-width: 800px;
+  max-width: 200px;
   margin: auto;
 }
 
@@ -251,6 +257,11 @@ body {
 }
 
 /* Contact Items */
+.contact h2{
+  max-width: 300px;
+  float: right;
+}
+
 .contact-row {
   display: flex;
   flex-wrap: wrap;
