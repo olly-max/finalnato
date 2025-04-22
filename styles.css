@@ -59,7 +59,7 @@ body {
 
 .menu-options {
   position: absolute;
-  top: 0;
+  top: o;
   left: 0;
   display: none; /* Hidden by default */
 }
@@ -83,7 +83,7 @@ body {
 
 /* Half-Flower Layout */
 .item1 {
-  top: -90px; /* Top petal */
+  top: -80px; /* Top petal */
   left: 0px;
 }
 
@@ -118,7 +118,7 @@ body {
 section,h2 {
   padding: 20px;
   margin: 10px;
-  border-radius: 10px;
+   border-radius: 50% 0;
   border: 2px solid #f89a21;
   background: linear-gradient(45deg, #ffe135, #ffffff);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -129,6 +129,7 @@ h2 {
   font-weight: 800;
   font-style: normal;
   border: 2px solid #f89a21;
+  border-radius: 50% 0;
   background: linear-gradient(45deg, #ffe135, #ffffff);
   gap: 20px; /* Space between the title and content */
   
@@ -213,6 +214,7 @@ h2 {
 
   .project {
     width: 80%;
+    border-radius: 50% 0;
   }
 }
 
@@ -233,7 +235,7 @@ body {
 .contact-border {
   padding: 20px;
   margin-bottom: 20px;
-  border-radius: 8px;
+  border-radius: 50% 0;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
